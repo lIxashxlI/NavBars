@@ -1,0 +1,32 @@
+body {
+    background-color: #80d280;
+    color: #877bd7;
+}
+/* Styling the list of items in the nav bar*/
+nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    margin:0;
+    padding:0;
+}
+/* Styling the space of each item */
+nav li {
+    list-style:none;
+    background-color: green;
+    color: #3521f1;
+    margin:0;
+    flex:1;
+    min-width:200px;
+    text-align:center;
+    display:flex;
+}
+nav a, nav a:visited {
+    text-decoration: none;
+    width:100%;
+    padding:8px 0px;
+    color: #3521f1;
+}
+nav a:hover, nav a.active {
+    color: #80d280;
+    background-color: rgb(53, 33, 241);
+}
