@@ -8,9 +8,12 @@ nav ul{
     flex-wrap: wrap;
     margin:0;
     padding:0;
+    z-index:10;
 }
 /* Styling the space of each item */
 nav li {
+    position: relative;
+    display: flex;
     list-style:none;
     background-color: green;
     color: #3521f1;
@@ -18,7 +21,6 @@ nav li {
     flex:1;
     min-width:200px;
     text-align:center;
-    display:flex;
 }
 nav a, nav a:visited {
     text-decoration: none;
@@ -29,4 +31,20 @@ nav a, nav a:visited {
 nav a:hover, nav a.active {
     color: #80d280;
     background-color: rgb(53, 33, 241);
+}
+.dropdown-content {
+    position: absolute;
+    top: 37px;
+    width:100%;
+    display: none;
+    z-index:20;
+}
+nav li:hover .dropdown-content {
+    display: block;
+}
+.dropdown-content a {
+    font-weight: bold;
+ }
+.dropdown-content ul {
+    flex-direction: column;
 }
